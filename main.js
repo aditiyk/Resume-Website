@@ -45,7 +45,7 @@ function addSquare(){
   const[x,y,z]= Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100));
 
   plane.position.set(x,y,z);
-  scene.add(plane)
+  scene.add(plane);
 }
 
 Array(500).fill().forEach(addSquare);
@@ -95,7 +95,7 @@ camera.position.z = t * -0.0001;
 camera.position.x = t * -0.001;
 camera.position.y = t * -0.002;
 }
-document.body.onscroll = moveCamera
+document.body.onscroll = moveCamera;
 
 function animate(){
   requestAnimationFrame(animate);
